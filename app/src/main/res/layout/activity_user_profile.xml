@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UserProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/UserProfileRelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        >
+
+    <TextView
+        android:id="@+id/UserProfileUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/hind_vadodara_bold"
+        android:text="Username"
+        />
+
+        <ImageView
+            android:id="@+id/UserProfileMenu"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/UserProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserProfileRelativeLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_semibold"
+
+        />
+
+    <TextView
+        android:id="@+id/UserProfileEditProfile"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/UserProfileName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/input_box"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:fontFamily="@font/hind_vadodara_semibold"
+        android:text="Edit profile"
+        />
+
+    <RelativeLayout
+        android:id="@+id/UserProfileRelativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/UserProfileEditProfile"
+        android:layout_above="@+id/UserProfileRelativeLayout4"
+        android:layout_marginTop="30dp"
+    >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/UserProfileRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/UserProfileRelativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/UserProfileHome"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_home"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/UserProfileVeterinaryHelp"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/UserProfileHome"
+            android:layout_toLeftOf="@+id/UserProfileUploadPost"
+            android:padding="5dp"
+            android:src="@drawable/ic_veterinary_help"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/UserProfileUploadPost"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_add"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/UserProfileShop"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/UserProfileUploadPost"
+            android:layout_toLeftOf="@+id/UserProfileUserProfile"
+            android:padding="5dp"
+            android:src="@drawable/ic_storefront"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/UserProfileUserProfile"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_user"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

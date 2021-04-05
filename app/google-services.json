@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952521250807",
+    "project_id": "protectpetauth",
+    "storage_bucket": "protectpetauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952521250807:android:a61cbaeb8f7bdfa47040f2",
+        "android_client_info": {
+          "package_name": "com.example.protectpetapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952521250807-v2h9v7rskj0sjgoccql7in502av7b6kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVfVXkfH5CjWtg7ubEB7hzhR1jFWL_NRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952521250807-v2h9v7rskj0sjgoccql7in502av7b6kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

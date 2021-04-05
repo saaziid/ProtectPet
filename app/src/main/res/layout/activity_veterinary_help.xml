@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VeterinaryHelpActivity">
+
+    <RelativeLayout
+        android:id="@+id/VeterinaryHelpRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:background="@color/grey100"
+        >
+
+        <ImageView
+            android:id="@+id/VeterinaryHelpAppLogo"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_applogofit"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/VeterinaryHelpLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/VeterinaryHelpRelativeLayout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/VeterinaryHelpHospitals"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/hospitals"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:id="@+id/VeterinaryHelpClinics"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/clinics"
+            tools:ignore="ContentDescription"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VeterinaryHelpLinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VeterinaryHelpLinearLayout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hind_vadodara_medium"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Veterinary Hospitals"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hind_vadodara_medium"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Clinics"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VeterinaryHelpLinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VeterinaryHelpLinearLayout2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/VeterinaryHelpMedicineStores"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/medicinestores"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:id="@+id/VeterinaryHelpVets"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/vets"
+            tools:ignore="ContentDescription"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VeterinaryHelpLinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VeterinaryHelpLinearLayout3"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hind_vadodara_medium"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Medicine Stores"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hind_vadodara_medium"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Vets"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VeterinaryHelpLinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VeterinaryHelpLinearLayout4"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/VeterinaryHelpVaccines"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/vaccines"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:id="@+id/VeterinaryHelpPetCare"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/petcare"
+            tools:ignore="ContentDescription"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VeterinaryHelpLinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VeterinaryHelpLinearLayout5"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hind_vadodara_medium"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Vaccines"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hind_vadodara_medium"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Pet Care"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

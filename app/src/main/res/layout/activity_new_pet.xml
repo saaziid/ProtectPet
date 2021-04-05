@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NewPetActivity">
+
+    <LinearLayout
+        android:id="@+id/NewPetLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/NewPetGoBack"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_arrow_logo"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/NewPetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/hind_vadodara_bold"
+            android:text="New pet"
+            />
+
+        <ImageView
+            android:id="@+id/NewPetTick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/ic_done_logo"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black"
+            />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/NewPetImageInsert"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/NewPetLinearLayout"
+            android:scaleType="centerCrop"
+            />
+
+    <TextView
+        android:id="@+id/NewPetAddLocation"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetImageInsert"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:text="Add location"
+        />
+
+    <EditText
+        android:id="@+id/NewPetNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetAddLocation"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Pet name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/NewPetSpeciesInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetNameInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Species"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/NewPetBirthdayInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetSpeciesInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Birthday"
+        android:inputType="date"
+        android:textColorHint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/NewPetGenderInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetBirthdayInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Gender"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/NewPetBreedInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetGenderInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Breed"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/NewPetFoodHabitInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetBreedInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Food habit"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/NewPetStatusInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetFoodHabitInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Status"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/NewPetMedicalHistoryInput"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/NewPetStatusInput"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/hind_vadodara_medium"
+        android:textColor="@color/black"
+        android:hint="Medical history (if any)"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        />
+
+    <ProgressBar
+        android:id="@+id/NewPetProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        />
+
+
+</RelativeLayout>
