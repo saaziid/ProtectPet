@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class VeterinaryHelpActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageView veterinaryHospitals, clinics, medicineStores, vets, vaccines, petCare;
+    private ImageView hospitals, shelters, medicineStores,foodShops, vaccines, petCare;
     // private TextView veterinaryHospitalsText, clinicsText, home, veterinaryHelp, uploadPost, shop, userProfile;
 
     @Override
@@ -18,14 +18,14 @@ public class VeterinaryHelpActivity extends AppCompatActivity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_veterinary_help);
 
-        veterinaryHospitals = (ImageView) findViewById(R.id.VeterinaryHelpHospitals);
-        veterinaryHospitals.setOnClickListener(this);
-        clinics = (ImageView) findViewById(R.id.VeterinaryHelpClinics);
-        clinics.setOnClickListener(this);
-        medicineStores = (ImageView) findViewById(R.id.VeterinaryHelpMedicineStores);
+        hospitals = (ImageView) findViewById(R.id.Hospitals);
+        hospitals.setOnClickListener(this);
+        shelters = (ImageView) findViewById(R.id.Shelter);
+        shelters.setOnClickListener(this);
+        medicineStores = (ImageView) findViewById(R.id.MedicineStores);
         medicineStores.setOnClickListener(this);
-        vets = (ImageView) findViewById(R.id.VeterinaryHelpVets);
-        vets.setOnClickListener(this);
+        foodShops = (ImageView) findViewById(R.id.FoodShops);
+        foodShops.setOnClickListener(this);
         vaccines = (ImageView) findViewById(R.id.VeterinaryHelpVaccines);
         vaccines.setOnClickListener(this);
         petCare = (ImageView) findViewById(R.id.VeterinaryHelpPetCare);
@@ -37,17 +37,17 @@ public class VeterinaryHelpActivity extends AppCompatActivity implements View.On
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.VeterinaryHelpHospitals:
-                //startActivity(new Intent(this, RegisterActivity.class));
+            case R.id.Hospitals:
+                startActivity(new Intent(this, MapsActivity.class));
                 break;
-            case R.id.VeterinaryHelpClinics:
-                //startActivity(new Intent(this, RegisterActivity.class));
+            case R.id.Shelter:
+                startActivity(new Intent(this, MapsActivity.class));
                 break;
-            case R.id.VeterinaryHelpMedicineStores:
-                startActivity(new Intent(this, VeterinaryHelpActivity.class));
+            case R.id.MedicineStores:
+                startActivity(new Intent(this, MapsActivity.class));
                 break;
-            case R.id.VeterinaryHelpVets:
-                //startActivity(new Intent(this, RegisterActivity.class));
+            case R.id.FoodShops:
+                startActivity(new Intent(this, MapsActivity.class));
                 break;
             case R.id.VeterinaryHelpVaccines:
                 //startActivity(new Intent(this, RegisterActivity.class));

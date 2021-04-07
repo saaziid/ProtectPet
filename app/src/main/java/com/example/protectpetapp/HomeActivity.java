@@ -43,7 +43,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 //startActivity(new Intent(this, RegisterActivity.class));
                 break;
 
-
             // HomeUploadPost button
             case R.id.HomeVeterinaryHelp:
                 startActivity(new Intent(this, VeterinaryHelpActivity.class));

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProtectPetApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyD7bS8pnihfKMvxuj6BbbCJhV43lhamWZQ</string>
 </resources>

@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".VeterinaryHelpActivity">
 
+
     <RelativeLayout
         android:id="@+id/VeterinaryHelpRelativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="45dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="7dp"
         android:background="@color/grey100"
         >
 
@@ -38,18 +37,18 @@
         >
 
         <ImageView
-            android:id="@+id/VeterinaryHelpHospitals"
+            android:id="@+id/Hospitals"
             android:layout_width="150dp"
             android:layout_height="110dp"
-            android:src="@drawable/hospitals"
+            android:src="@drawable/clinics"
             tools:ignore="ContentDescription"
             />
 
         <ImageView
-            android:id="@+id/VeterinaryHelpClinics"
+            android:id="@+id/Shelter"
             android:layout_width="150dp"
             android:layout_height="110dp"
-            android:src="@drawable/clinics"
+            android:src="@drawable/ic_homeicon"
             tools:ignore="ContentDescription"
             />
     </LinearLayout>
@@ -71,7 +70,7 @@
             android:textAlignment="center"
             android:textSize="16dp"
             android:textColor="@color/black"
-            android:text="Veterinary Hospitals"
+            android:text="Hospitals"
             />
 
         <TextView
@@ -82,7 +81,7 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="@color/black"
-            android:text="Clinics"
+            android:text="Shelter House"
             />
     </LinearLayout>
 
@@ -97,7 +96,7 @@
         >
 
         <ImageView
-            android:id="@+id/VeterinaryHelpMedicineStores"
+            android:id="@+id/MedicineStores"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:src="@drawable/medicinestores"
@@ -105,10 +104,10 @@
             />
 
         <ImageView
-            android:id="@+id/VeterinaryHelpVets"
+            android:id="@+id/FoodShops"
             android:layout_width="150dp"
             android:layout_height="110dp"
-            android:src="@drawable/vets"
+            android:src="@drawable/ic_foodshop"
             tools:ignore="ContentDescription"
             />
     </LinearLayout>
@@ -141,7 +140,7 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="@color/black"
-            android:text="Vets"
+            android:text="Food Shops"
             />
     </LinearLayout>
 
