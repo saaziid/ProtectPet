@@ -49,9 +49,9 @@ public class MapsActivity extends FragmentActivity implements
     private LocationRequest locationRequest;
     private Location lastlocation;
     private Marker currentUserLocationMarker;
-    private static final int Request_User_Location_Code = 99;
+    private static final int Request_User_Location_Code = 101;
     private double latitude,longitude;
-    private int ProximityRadius = 50000;
+    private int ProximityRadius = 10000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +70,7 @@ public class MapsActivity extends FragmentActivity implements
 
     public void onClick(View v) throws IOException {
 
-        String hospital = "animal hospital", shelter = "animal shelter", foodshop = "animal food", medicineshop = "animal medicine shop";
+        String hospital = "animal hospital", shelter = "animal shelter", foodshop = "animal feed store", medicineshop = "veterinary pharmacy";
         Object transferData[] = new Object[2];
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
 
@@ -84,7 +84,7 @@ public class MapsActivity extends FragmentActivity implements
                 transferData[1] = url;
                 getNearbyPlaces.execute(transferData);
                 Toast.makeText(this, "Searching for nearby animal hospitals", Toast.LENGTH_SHORT).show();
-                Toast.makeText(this, "Showing nearby animal hospitals", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Showing nearby animal hospitals", Toast.LENGTH_SHORT).show();
                 break;
 
 
@@ -96,8 +96,8 @@ public class MapsActivity extends FragmentActivity implements
                 transferData[0] = mMap;
                 transferData[1] = url;
                 getNearbyPlaces.execute(transferData);
-                Toast.makeText(this, "Searching for nearby animal shelter", Toast.LENGTH_SHORT).show();
-                Toast.makeText(this, "Showing nearby animal shelter", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Searching for nearby animal shelters", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Showing nearby animal shelter", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.FoodShops:
@@ -107,7 +107,7 @@ public class MapsActivity extends FragmentActivity implements
                 transferData[1] = url;
                 getNearbyPlaces.execute(transferData);
                 Toast.makeText(this, "Searching for nearby food shop", Toast.LENGTH_SHORT).show();
-                Toast.makeText(this, "Showing nearby food shop", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Showing nearby food shop", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.MedicineStores:
@@ -116,8 +116,8 @@ public class MapsActivity extends FragmentActivity implements
                 transferData[0] = mMap;
                 transferData[1] = url;
                 getNearbyPlaces.execute(transferData);
-                Toast.makeText(this, "Searching for nearby medicine shop", Toast.LENGTH_SHORT).show();
-                Toast.makeText(this, "Showing nearby medicine shop", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Searching for nearby veterinary pharmacy", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Showing nearby medicine shop", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
@@ -127,7 +127,8 @@ public class MapsActivity extends FragmentActivity implements
         googleURL.append("location="+latitude+","+longitude);
         googleURL.append("&radius="+ProximityRadius);
         googleURL.append("&type="+nearbyPlace);
-        googleURL.append("&sensor=true");
+        //googleURL.append("&name=animal");
+        //googleURL.append("&sensor=true");
         googleURL.append("&key="+getResources().getString(R.string.google_maps_key));
 
         Log.d("GoogleMapsActivity","url = "+googleURL.toString());
@@ -156,7 +157,7 @@ public class MapsActivity extends FragmentActivity implements
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        //super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case Request_User_Location_Code:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -202,7 +203,7 @@ public class MapsActivity extends FragmentActivity implements
         currentUserLocationMarker = mMap.addMarker(markerOptions);
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        mMap.animateCamera(CameraUpdateFactory.zoomBy(15));
+        mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
 
         if (googleApiClient != null) {
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);

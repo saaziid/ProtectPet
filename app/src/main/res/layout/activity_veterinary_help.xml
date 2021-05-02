@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".VeterinaryHelpActivity">
+    tools:context=".VeterinaryHelpActivity"
+    android:orientation="vertical">
 
-
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/VeterinaryHelpRelativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="42dp"
         android:layout_alignParentTop="true"
         android:background="@color/grey100"
         >
@@ -24,7 +25,7 @@
             android:layout_alignParentTop="true"
             android:src="@drawable/ic_applogofit"
             tools:ignore="ContentDescription" />
-    </RelativeLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/VeterinaryHelpLinearLayout"
@@ -37,18 +38,18 @@
         >
 
         <ImageView
-            android:id="@+id/Hospitals"
+            android:id="@+id/Maphelper"
             android:layout_width="150dp"
             android:layout_height="110dp"
-            android:src="@drawable/clinics"
+            android:src="@drawable/maplocation"
             tools:ignore="ContentDescription"
             />
 
         <ImageView
-            android:id="@+id/Shelter"
+            android:id="@+id/petcare"
             android:layout_width="150dp"
             android:layout_height="110dp"
-            android:src="@drawable/ic_homeicon"
+            android:src="@drawable/petcare"
             tools:ignore="ContentDescription"
             />
     </LinearLayout>
@@ -70,7 +71,7 @@
             android:textAlignment="center"
             android:textSize="16dp"
             android:textColor="@color/black"
-            android:text="Hospitals"
+            android:text="Nearby Help"
             />
 
         <TextView
@@ -81,7 +82,7 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="@color/black"
-            android:text="Shelter House"
+            android:text="Pet Care"
             />
     </LinearLayout>
 
@@ -96,7 +97,7 @@
         >
 
         <ImageView
-            android:id="@+id/MedicineStores"
+            android:id="@+id/Vaccines"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:src="@drawable/medicinestores"
@@ -104,10 +105,10 @@
             />
 
         <ImageView
-            android:id="@+id/FoodShops"
+            android:id="@+id/mypet"
             android:layout_width="150dp"
             android:layout_height="110dp"
-            android:src="@drawable/ic_foodshop"
+            android:src="@drawable/rabbit"
             tools:ignore="ContentDescription"
             />
     </LinearLayout>
@@ -117,65 +118,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/VeterinaryHelpLinearLayout3"
-        android:orientation="horizontal"
-        android:gravity="center"
-        >
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:fontFamily="@font/hind_vadodara_medium"
-            android:gravity="center_horizontal"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:text="Medicine Stores"
-            />
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:fontFamily="@font/hind_vadodara_medium"
-            android:gravity="center_horizontal"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:text="Food Shops"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/VeterinaryHelpLinearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/VeterinaryHelpLinearLayout4"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="15dp"
-        >
-
-        <ImageView
-            android:id="@+id/VeterinaryHelpVaccines"
-            android:layout_width="150dp"
-            android:layout_height="110dp"
-            android:src="@drawable/vaccines"
-            tools:ignore="ContentDescription"
-            />
-
-        <ImageView
-            android:id="@+id/VeterinaryHelpPetCare"
-            android:layout_width="150dp"
-            android:layout_height="110dp"
-            android:src="@drawable/petcare"
-            tools:ignore="ContentDescription"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/VeterinaryHelpLinearLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/VeterinaryHelpLinearLayout5"
         android:orientation="horizontal"
         android:gravity="center"
         >
@@ -199,8 +141,9 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="@color/black"
-            android:text="Pet Care"
+            android:text="Details"
             />
     </LinearLayout>
 
-</RelativeLayout>
+
+</LinearLayout>

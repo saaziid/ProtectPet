@@ -34,5 +34,51 @@
             tools:ignore="ContentDescription" />
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/second_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/Hospitals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="onClick"
+            android:src="@drawable/hospital" />
+
+        <ImageButton
+            android:id="@+id/Shelter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/Hospitals"
+            android:src="@drawable/shelter"
+            android:onClick="onClick"
+            android:layout_toRightOf="@+id/Hospitals" />
+
+        <ImageButton
+            android:id="@+id/MedicineStores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/Shelter"
+            android:src="@drawable/medicineshop"
+            android:onClick="onClick"
+            android:layout_toRightOf="@+id/Shelter" />
+
+        <ImageButton
+            android:id="@+id/FoodShops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/MedicineStores"
+            android:src="@drawable/foodshp"
+            android:onClick="onClick"
+            android:layout_toRightOf="@+id/Shelter" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
